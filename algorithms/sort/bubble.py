@@ -31,7 +31,7 @@ def bubble_sort(array: List[int]) -> List[int]:
         >>> assert bubble_sort([0, 7, 5, 4]) == sorted([0, 7, 5, 4])
         >>> assert bubble_sort([0, 7, 5, 4]) != [0, 7, 5, 4]
     """
-    if not len(array):
+    if len(array) == 0:
         return array
     for _ in range(len(array)):  # type: int
         for inner in range(len(array) - 1):  # type: int
