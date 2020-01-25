@@ -5,23 +5,39 @@
 
 # Python algorithms
 
-This project is aimed to discover algorithms using `python` programming language (for education mostly).
-All source code is located [here](algorithms).
+> This project is aimed to discover algorithms using `python` programming language (for education mostly).
+>
+> All source code is located under [algorithms](algorithms) package.
+>
+> **Note:** it is under construction.
 
 ## Tools
 - python 3.6, 3.7, 3.8
-- [black](https://black.readthedocs.io/en/stable/)
-- [pylint](https://www.pylint.org/)
-- [xdoctest](https://github.com/Erotemic/xdoctest)
+- code analysis
+  - [black](https://black.readthedocs.io/en/stable/)
+  - [pylint](https://www.pylint.org/)
+  - [xdoctest](https://github.com/Erotemic/xdoctest)
+
+## Content
+- [Sorting](algorithms/sort)
 
 ## Development notes
+
+### Run unittests
+
+In order to execute just unittests, please run following command (note `xdoctest` tool is used as a test runner):
+```
+➜ python -m xdoctest algorithms
+```
+
+### CI
 
 Project has Travis CI integration thus code analysis (`black`, `pylint`) and unittests (`xdoctest`) will be run automatically
 after every made change to the repository.
 
 To be able to run code analysis, please execute command below:
 ```bash
-~ ./run-code-analysis.sh
+➜ ./run-code-analysis.sh
 ```
 
 ### Meta
